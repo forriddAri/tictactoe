@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+.button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff004f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.5s ease;
+}
+
+.cell.about-to-remove {
+    background-color: #ff004f;
+    color: white; /* Change symbol color for contrast */
+}
+
+
+button#restart {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff004f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#restart:hover {
+    background-color: #e60042;
+}
